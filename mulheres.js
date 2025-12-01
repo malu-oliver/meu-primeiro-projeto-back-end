@@ -20,7 +20,7 @@ const porta = 3333; //aqui definindo a porta
 async function mostraMulheres(request,response) {
     try {
         const mulheresVindasDoBancoDeDados = await Mulher.find() //aqui buscando as mulheres no banco de dados
-        response.jason(mulheresVindasDoBancoDeDados) //aqui mostrando as mulheres
+        response.json(mulheresVindasDoBancoDeDados) //aqui mostrando as mulheres
 
     }catch (erro) {
         console.log(erro)
